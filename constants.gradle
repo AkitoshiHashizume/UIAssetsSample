@@ -1,0 +1,13 @@
+project.ext {
+
+  config = [// project setting
+            compileSdkVersion: 30,
+            minSdkVersion    : 16,
+            targetSdkVersion : 30,]
+
+  versions = [kotlin: "1.4.21"]
+
+  deps = [androidPlugin    : "com.android.tools.build:gradle:4.1.1",
+          kotlinPlugin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+          mavenGradlePlugin: "com.github.dcendents:android-maven-gradle-plugin:2.0",]
+}
